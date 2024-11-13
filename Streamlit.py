@@ -36,7 +36,7 @@ if st.button('Submit Car Info'):
     
     # Sending a POST request to the FastAPI server
     try:
-        response = requests.post("http://127.0.0.1:8000/car", json=car_data)
+        response = requests.post("https://ml-7joy.onrender.com/predict", json=car_data)
         
         # Check the response status
         if response.status_code == 200:

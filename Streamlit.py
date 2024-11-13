@@ -25,7 +25,3 @@ st.write(f'You selected age: {age}')
 if st.button('Click me'):
     st.write('You clicked the button!')
 
-
-
-
-st.line_chart(df)

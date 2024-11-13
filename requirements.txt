@@ -2,8 +2,6 @@ joblib==1.2.0
 pydantic==2.9.2
 fastapi==0.115.5
 uvicorn==0.32.0
-<<<<<<< HEAD
 scikit-learn==1.5.0
-=======
 scikit-learn==1.5.0
->>>>>>> 7fb922e732db99fbe9020984acf70647a1209ae4
+streamlit

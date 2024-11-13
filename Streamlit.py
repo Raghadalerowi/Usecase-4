@@ -25,12 +25,12 @@ st.write("What The Options?:")
 if st.button('Submit Car Info'):
     # Preparing the data in a dictionary format
     car_data = {
-        "Year": year,
-        "Engine_Size": engine_size,
-        "Mileage": mileage,
-        "Type": car_type,
-        "Make": make,
-        "Options": options
+        "Year": Year,
+        "Engine_Size": Engine_Size,
+        "Mileage": Mileage,
+        "Type": Type,
+        "Make": Make,
+        "Options": Options
     }
     
     # Sending a POST request to the FastAPI server

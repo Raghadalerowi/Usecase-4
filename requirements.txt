@@ -2,4 +2,4 @@ pydantic
 fastapi
 joblib
 uvicorn
-
+sklearn

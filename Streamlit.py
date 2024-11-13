@@ -68,7 +68,7 @@ options = st.selectbox("Options", ["Full", "Standard"])  # Adjust according to o
 #Prediction button
 if st.button("Predict Price"):
     # API request URL
-    url = "https://the-penguin.onrender.com/predict"
+    url = "https://ml-7joy.onrender.com/predict"
 
 Data for the POST request
     data = {

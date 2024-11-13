@@ -1,4 +1,5 @@
 import streamlit as st
+import requests 
 
 st.title('Use case 4 FastAPI')
 

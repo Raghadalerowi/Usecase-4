@@ -19,19 +19,31 @@ Type = st.text_input("What's The Type?",value='LandCruiser')
 
 Make = st.text_input("What's The Brand?",value='Hyundai') 
 
-Options = st.text_input("What's It's Options?")
-
 Options = st.selectbox("What The Options?", ["Full", "Standard"])
 st.write("What The Options?:")
 
-
-# Add a slider
-age = st.slider('Select your age', 0, 100, 25)
-
-# Display selected age
-st.write(f'You selected age: {age}')
-
-# Add a button
-if st.button('Click me'):
-    st.write('You clicked the button!')
-
+if st.button('Submit Car Info'):
+    # Preparing the data in a dictionary format
+    car_data = {
+        "Year": year,
+        "Engine_Size": engine_size,
+        "Mileage": mileage,
+        "Type": car_type,
+        "Make": make,
+        "Options": options
+    }
+    
+    # Sending a POST request to the FastAPI server
+    try:
+        response = requests.post("http://127.0.0.1:8000/car", json=car_data)
+        
+        # Check the response status
+        if response.status_code == 200:
+            data = response.json()
+            st.success("Car data sent successfully!")
+            st.write("Response from FastAPI server:")
+            st.json(data)
+        else:
+            st.error("Error sending data to the FastAPI server.")
+    except requests.exceptions.RequestException as e:
+        st.error(f"Request error: {e}")

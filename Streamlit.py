@@ -70,7 +70,7 @@ if st.button("Predict Price"):
     # API request URL
     url = "https://ml-7joy.onrender.com/predict"
 
-Data for the POST request
+#Data for the POST request
     data = {
         "Year": year,
         "Engine_Size": engine_size,

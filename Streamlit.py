@@ -9,7 +9,17 @@ st.header('Welcome')
 st.write('SFA streamlit app')
 
 # Create an input field
-name = st.text_input("What's your name?")
+Year =  st.number_input("Enter your Year", min_value=2000, max_value=2100, value=2000)
+
+Engine_Size = st.text_input("What's your name?")
+
+Mileage = st.text_input("What's your name?")
+
+Type = st.text_input("What's your name?")
+
+Make = st.text_input("What's your name?")
+
+Options = st.text_input("What's your name?")
 
 # Display the input
 if name:

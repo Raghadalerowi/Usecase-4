@@ -5,8 +5,8 @@ import joblib
 app = FastAPI()
 
 # Load the pre-trained model and scaler
-model = joblib.load(r"knn_model.joblib")
-scaler = joblib.load(r"scaler.joblib")
+model = joblib.load(r"ML/SL/Classification/knn_model.joblib")
+scaler = joblib.load(r"ML/SL/Classification/scaler.joblib")
 
 # Define a Pydantic model for input data validation
 class InputFeatures(BaseModel):

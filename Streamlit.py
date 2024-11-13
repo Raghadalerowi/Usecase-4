@@ -9,21 +9,21 @@ st.header('Welcome')
 st.write('SFA streamlit app')
 
 # Create an input field
-Year =  st.number_input("Enter your Year", min_value=2000, max_value=2100, value=2000)
+Year =  st.number_input("Enter THE Year", min_value=2000, max_value=2100, value=2000)
 
-Engine_Size = st.text_input("What's your name?")
+Engine_Size = st.number_input("Enter your Engine_Size", value=100)
 
-Mileage = st.text_input("What's your name?")
+Mileage = st.number_input("Enter THE Mileage",value=0)
 
-Type = st.text_input("What's your name?")
+Type = st.text_input("What's The Type?",value='LandCruiser')
 
-Make = st.text_input("What's your name?")
+Make = st.text_input("What's The Brand?",value='Hyundai') 
 
-Options = st.text_input("What's your name?")
+Options = st.text_input("What's It's Options?")
 
-# Display the input
-if name:
-    st.write(f'Hello, {name}!')
+Options = st.selectbox("What The Options?", ["Full", "Standard"])
+st.write("What The Options?:")
+
 
 # Add a slider
 age = st.slider('Select your age', 0, 100, 25)

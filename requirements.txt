@@ -1,3 +1,5 @@
-joblib
 pydantic
 fastapi
+joblib
+uvicorn
+
